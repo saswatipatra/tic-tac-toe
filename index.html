@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Tic-Tac-Toe</title>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tic-Tac-Toe</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <hr>
+          <h2>Kindly add the player names</h2>
+          <form id="playerName">
+            <div class="form-group">
+              <label for="firstPlayer">Enter the first Player Name</label>
+              <input type="text"  class="form-control" id="firstPlayer">
+            </div>
+            <div class="form-group">
+              <label for="secPlayer">Enter the second Player Name</label>
+              <input type="text"  class="form-control" id="secPlayer">
+            </div>
+            <button type="submit" class="btn-primary">Let's Play!</button>
+          </form>
+          <p id="table">
+            <b>Enter the no of row and column to create table:</b>
+            <br/><br/>
+            <table>
+                <tr>
+                    <th>No. of Row(s) </th>
+                    <th>No. of Column(s)</th>
+                </tr>
+                <tr>
+                    <td><input type="number" id="row" > X</td>
+                    <td><input type="number" id="col">Y</td>
+                </tr>
+            </table>
+            <br/>
+            <button id="create" onclick="create()">create table</button>
+        </p>
+
+          <hr>
+          <h2>Contacts:</h2>
+          <ul id="contacts">
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="show-contact">
+            <p>First Name: <span class="first-name"></span></p>
+            <p>Last Name: <span class="last-name"></span></p>
+            <p>Phone Number: <span class="phone-number"></span></p>
+            <div id="buttons">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
